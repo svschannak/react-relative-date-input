@@ -1,5 +1,12 @@
 {
   "dependencies": {
+    "babel-core": "^6.26.3",
+    "babel-plugin-transform-runtime": "^6.23.0",
+    "babel-preset-env": "^1.7.0",
+    "babel-preset-minify": "^0.4.3",
+    "babel-preset-react": "^6.24.1",
+    "babel-preset-stage-2": "^6.24.1",
+    "babelify": "^8.0.0",
     "moment": "^2.22.2",
     "prop-types": "^15.6.1",
     "react": "^16.4.0"
@@ -7,7 +14,7 @@
   "name": "react-relative-date-input",
   "description": "Completely customizable input and select for choosing an relative date in the future.",
   "version": "1.1.2",
-  "main": "index.js",
+  "main": "build/index.js",
   "devDependencies": {},
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -25,5 +32,12 @@
   "bugs": {
     "url": "https://github.com/svschannak/react-relative-date-input/issues"
   },
-  "homepage": "https://github.com/svschannak/react-relative-date-input#readme"
+  "homepage": "https://github.com/svschannak/react-relative-date-input#readme",
+  "browserify": {
+    "transform": [
+      [
+        "babelify"
+      ]
+    ]
+  }
 }
