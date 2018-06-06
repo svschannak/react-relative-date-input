@@ -6,7 +6,7 @@
   },
   "name": "react-relative-date-input",
   "description": "Completely customizable input and select for choosing an relative date in the future.",
-  "version": "1.1.0",
+  "version": "1.1.1",
   "main": "index.js",
   "devDependencies": {},
   "scripts": {
