@@ -40,10 +40,10 @@ const defaultProps = {
 }
 
 const dateTransformFunctions = {
-    "days": addDays,
-    "weeks": addWeeks,
-    "months": addMonths,
-    "years": addYears
+    days: addDays,
+    weeks: addWeeks,
+    months: addMonths,
+    years: addYears
 }
 
 class RelativeDatePicker extends React.Component {
