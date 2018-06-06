@@ -49,4 +49,8 @@ const YourForm = () => {
 |weeksLabel|Text for weeks in select|"Weeks"|
 |yearsLabel|Text for years in select|"Years"|
 
+## Build
+```bash
+browserify index.js -o build/index.js
+```
 
