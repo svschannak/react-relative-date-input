@@ -81,11 +81,11 @@ class RelativeDatePicker extends React.Component {
 
     transformData = () => {
         const today = new Date();
-        const dateFunction = dateTransformFunctions(this.state.periodType);
-        const newChosenData = dateFunction(today, this.state.number);
+        const dateFunction = dateTransformFunctions[this.state.periodType];
+        const newChosenDate = dateFunction(today, this.state.number);
         this.setState(
             {
-                chosenDate: newChosenData
+                chosenDate: newChosenDate
             },
             () => {
                 this.props.onChange(this.state.chosenDate);
