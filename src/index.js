@@ -1,6 +1,9 @@
 import React from "React";
 import PropTypes from 'prop-types';
-import moment from "moment";
+import addDays from 'date-fns/add_days';
+import addWeeks from 'date-fns/add_weeks';
+import addMonths from 'date-fns/add_months';
+import addYears from 'date-fns/add_years';
 
 const propTypes = {
     onChange: PropTypes.func.isRequired,
@@ -34,6 +37,13 @@ const defaultProps = {
     daysLabel: "Tage",
     weeksLabel: "Wochen",
     yearsLabel: "Jahre"
+}
+
+const dateTransformFunctions = {
+    "days": addDays,
+    "weeks": addWeeks,
+    "months": addMonths,
+    "years": addYears
 }
 
 class RelativeDatePicker extends React.Component {
@@ -70,10 +80,9 @@ class RelativeDatePicker extends React.Component {
     };
 
     transformData = () => {
-        const newChosenData = moment().add(
-            this.state.number,
-            this.state.periodType
-        );
+        const today = new Date();
+        const dateFunction = dateTransformFunctions(this.state.periodType);
+        const newChosenData = dateFunction(today, this.state.number);
         this.setState(
             {
                 chosenDate: newChosenData
