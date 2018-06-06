@@ -33,7 +33,7 @@ const defaultProps = {
     monthsLabel: "Monate",
     daysLabel: "Tage",
     weeksLabel: "Wochen",
-    yearsLabel: "Jahre"s
+    yearsLabel: "Jahre"
 }
 
 class RelativeDatePicker extends React.Component {
