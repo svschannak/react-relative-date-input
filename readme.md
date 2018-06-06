@@ -1,6 +1,6 @@
 # React relative date input
 
-Input and select for choosing an relative date in the future.
+Completely customizable input and select for choosing an relative date in the future.
 
 ## Example
 ![Example for react relative date input](example.png "Example for react relative date input")
