@@ -33,15 +33,18 @@ const defaultProps = {
     monthsLabel: "Monate",
     daysLabel: "Tage",
     weeksLabel: "Wochen",
-    yearsLabel: "Jahre"
+    yearsLabel: "Jahre"s
 }
 
 class RelativeDatePicker extends React.Component {
-    state = {
-        number: null,
-        periodType: "months",
-        chosenDate: null
-    };
+    constructor(){
+        this.state = {
+            number: null,
+            periodType: "months",
+            chosenDate: null
+        };
+    }
+
 
     changePeriodType = e => {
         this.setState(
