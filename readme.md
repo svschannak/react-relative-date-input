@@ -5,6 +5,8 @@ Completely customizable input and select for choosing an relative date in the fu
 ## Example
 ![Example for react relative date input](example.png "Example for react relative date input")
 
+**Try it here**: <https://codesandbox.io/s/jzpr5j2n99>
+
 ## Installation
 
 ```bash
