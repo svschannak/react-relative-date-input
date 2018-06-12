@@ -17,9 +17,8 @@ yarn add react-relative-date-input
 ```js
 import RelativeDatePicker from "react-relative-date-input";
 
-const onChange = (momentDate) => {
-    // gives you a moment.js date
-    console.log(momentDate);
+const onChange = (chosenDate) => {
+    console.log(chosenDate);
 }
 
 const YourForm = () => {
