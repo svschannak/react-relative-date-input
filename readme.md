@@ -52,6 +52,6 @@ const YourForm = () => {
 
 ## Build
 ```bash
-browserify index.js -o build/index.js
+npx webpack --config webpack.config.js
 ```
 
